@@ -1,0 +1,20 @@
+
+<div  fxLayout="column" 
+      fxLayoutGap="10px">
+     <div fxFlex="80"
+          fxFlexAlign="center"
+          fxLayoutGap="10px">
+          <h1>¿Está seguro?</h1>
+          <hr>
+          <h3>deseas eliminar a {{data.superhero}}</h3>
+          <h3>¡No podrás revertir esto!</h3>
+     </div>
+
+</div>
+
+<div fxLayout>
+    <button mat-button (click)="borrar()" color="warn">si, borrar</button>
+    <span class="spacer"></span>
+    <button mat-button (click)="cerrar()" color="accent">cancelar</button>
+</div>
+
